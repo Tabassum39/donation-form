@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Make a Donation</title>
+  <link rel="stylesheet" href="../CSS/task_3_style.css">
+</head>
+<body>
+  <div class="form-container">
+    <form id="donationForm">
+      <h2>🤝 Make a Donation</h2>
+
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number *</label>
+      <input type="text" id="phone" name="phone" maxlength="11" required>
+
+      <label for="password">Password *</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="amount">Donation Amount ($) *</label>
+      <input type="number" id="amount" name="amount" required>
+
+      <div class="checkbox-group">
+        <input type="checkbox" id="terms" name="terms">
+        <label for="terms">
+          I agree to the <strong><a href="#"> terms & Conditions </a></strong> and understand that my donation will be used for charitable purposes.
+        </label>
+      </div>
+
+      <button type="submit">Donate Now</button>
+    </form>
+  </div>
+
+  <script src="../JS/task_3_valid.js"></script>
+</body>
+</html>
