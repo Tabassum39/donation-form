@@ -1,39 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Make a Donation</title>
-  <link rel="stylesheet" href="../CSS/task_3_style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Application</title>
+  <link rel="stylesheet" href="../CSS/task_3_style.css" />
 </head>
 <body>
   <div class="form-container">
-    <form id="donationForm">
-      <h2>🤝 Make a Donation</h2>
+    <form id="jobApplication" novalidate>
+      <h2>Job Application</h2>
 
       <label for="name">Full Name *</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name" required placeholder="Jane Doe" />
 
       <label for="email">Email Address *</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" required placeholder="jane@example.com" />
 
       <label for="phone">Phone Number *</label>
-      <input type="text" id="phone" name="phone" maxlength="11" required>
+      <input type="text" id="phone" name="phone" maxlength="11" inputmode="numeric" required placeholder="11 digits" />
 
-      <label for="password">Password *</label>
-      <input type="password" id="password" name="password" required>
+      <label for="password">Create Account Password *</label>
+      <input type="password" id="password" name="password" required placeholder="••••••••" />
 
-      <label for="amount">Donation Amount ($) *</label>
-      <input type="number" id="amount" name="amount" required>
+      <label for="experience">Experience Level *</label>
+      <select id="experience" name="experience" required>
+        <option value="" disabled selected>Select your experience level</option>
+        <option value="entry">Entry Level (0-2 years)</option>
+        <option value="mid">Mid Level (3-5 years)</option>
+        <option value="senior">Senior Level (6-10 years)</option>
+        <option value="executive">Executive (10+ years)</option>
+      </select>
+
+      <label for="amount">Expected Salary (Annual) *</label>
+      <input type="number" id="amount" name="amount" min="1" required placeholder="50000" />
 
       <div class="checkbox-group">
-        <input type="checkbox" id="terms" name="terms">
+        <input type="checkbox" id="terms" name="terms" required />
         <label for="terms">
-          I agree to the <strong><a href="#"> terms & Conditions </a></strong> and understand that my donation will be used for charitable purposes.
+          I agree to the <strong><a href="#">Terms &amp; Conditions</a></strong> and Privacy Policy *
         </label>
       </div>
 
-      <button type="submit">Donate Now</button>
+      <button type="submit">SUBMIT APPLICATION</button>
     </form>
   </div>
 
